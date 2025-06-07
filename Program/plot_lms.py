@@ -1,5 +1,5 @@
 #Laura Fawzia Sambowo - 2306260145
-#Proyek UAS Komnum - Adaptive Noise Cancellation Using Least-Squares Regression
+#Proyek UAS - Adaptive Noise Cancellation Using Least-Squares Regression
 
 import pandas as pd
 import matplotlib.pyplot as plt
