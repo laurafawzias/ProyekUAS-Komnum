@@ -1,4 +1,4 @@
-# 🎯 Adaptive Noise Cancellation Using LMS Algorithm
+# 🎯 Adaptive Noise Cancellation Using Least-Squares Regression
 
 ## Table of Contents
 - [Project Overview 📖](#project-overview)
