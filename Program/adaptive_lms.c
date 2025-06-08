@@ -1,5 +1,6 @@
 //Laura Fawzia Sambowo - 2306260145
 //Proyek UAS - Adaptive Noise Cancellation Using Least-Squares Regression
+// adaptive_lms.c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,7 +64,7 @@ int main()
         y[i] = dot_product(h, x);
         e[i] = d[i] - y[i];
         for (int j = 0; j < M; j++)
-            h[j] += 2 * MU * e[i] * x[j];
+            h[j] += MU * e[i] * x[j];
     }
 
     // write output

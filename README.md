@@ -1,18 +1,18 @@
 # 🎯 Adaptive Noise Cancellation Using LMS Algorithm
 
 ## Table of Contents
-- [Project Overview](#project-overview)
-- [About the Author](#about-the-author)
-- [Theory Behind Adaptive Noise Cancellation](#theory-behind-adaptive-noise-cancellation)
-- [The LMS Algorithm](#the-lms-algorithm)
+- [Project Overview 📖](#project-overview)
+- [About the Author 🎓](#about-the-author)
+- [Theory Behind Adaptive Noise Cancellation 🔉](#theory-behind-adaptive-noise-cancellation)
+- [The LMS Algorithm 📐](#the-lms-algorithm)
 - [Implementation Details](#implementation-details)
-- [Project Structure](#project-structure)
-- [How to Run This Project](#how-to-run-this-project)
-- [Results & Visualizations](#results--visualizations)
-- [Analysis & Results](#analysis--results)
-- [Conclusions](#conclusions)
-- [References](#references)
-- [Academic Note](#academic-note)
+- [Project Structure 📁](#project-structure)
+- [How to Run This Project 🚀](#how-to-run-this-project)
+- [Results & Visualizations 📊](#results--visualizations)
+- [Analysis & Results 🔬](#analysis--results)
+- [Conclusions 🎯](#conclusions)
+- [References 📚](#references)
+- [Academic Note 🎓](#academic-note)
 
 ## Project Overview 📖
 
@@ -23,14 +23,12 @@ This final project for the Numerical Computation course implements an adaptive n
 <div align="center">
 
 ![Laura's Photo](https://i.imgur.com/4PcalyW.png)  
-
 **Laura Fawzia Sambowo**  
 *Student ID: 2306260145*
 
 🎓 **Computer Engineering, University of Indonesia**
 
 ---
-
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/laurafawzias/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/laurafawzias)
@@ -54,6 +52,10 @@ The system works with three key components:
 2. ➖ Filter output is subtracted from the primary input
 3. 📊 The resulting error is used to update filter coefficients
 4. 🔄 Process continues until error is minimized
+
+### System Block Diagram
+![LMS Block Diagram](Figures/LMS%20Block%20Diagram.png)
+*Figure: LMS Adaptive Filter System Block Diagram*
 
 ---
 
@@ -123,7 +125,8 @@ Adaptive Noise Cancellation Project
 ├── Figures/                      # Generated plots
 │   ├── desired_output.png        # Comparison plot
 │   ├── output_zoom.png           # Zoomed view
-│   └── error.png                 # Error signal
+│   ├── error.png                 # Error signal
+│   └── LMS Block Diagram.png     # System block diagram
 └── Journal References/           # Academic references
     ├── IMJSTP29120119.pdf
     ├── Performance_Comparison_of_LMS_and_RLS_Algorithms_f.pdf
@@ -169,6 +172,7 @@ Adaptive Noise Cancellation Project
    - `desired_output.png` - Input vs filtered output comparison
    - `output_zoom.png` - Detailed view of the filtered signal  
    - `error.png` - Error signal evolution over time
+   - `LMS Block Diagram.png` - System architecture diagram
 
 ---
 
@@ -204,12 +208,12 @@ With learning rate μ = 0.01, the system exhibits excellent stability without ex
 ### **Error Characteristics** 📉
 Error amplitude decreases over time, clearly indicating effective learning and adaptation. The algorithm demonstrates consistent performance improvement.
 
-### **Output Quality** ✨
+### **Output Quality** 🔧
 The filtered output shows notable improvement compared to the noisy input signal, validating the effectiveness of the adaptive approach.
 
 ---
 
-## Conclusions
+## Conclusions 🎯
 
 Our adaptive noise cancellation implementation using the LMS algorithm successfully demonstrates:
 
@@ -222,13 +226,16 @@ This project showcases the practical application of numerical computation concep
 
 ---
 
-## 📚 References
+## References 📚
 
-- Haykin, S. *Adaptive Filter Theory*, 4th Edition, Prentice Hall, 2002
-- Widrow, B. & Stearns, S.D. *Adaptive Signal Processing*, Prentice Hall, 1985  
-- Chiheb, A., & Khelladi, H. "Performance Comparison of LMS and RLS Algorithms for Ambient Noise Attenuation," *Journal of Electrical and Computer Engineering Research*, Vol. 4, No. 1, 2024
-- Manseur, A., & Dendouga, A. "Enhanced Noise Cancellation: A Variable Step Size Normalized Least Mean Square Approach," *Traitement du Signal*, Vol. 41, No. 2, April 2024, pp. 911-918
-- Akpan, N.A.P., Udofia, K., & Ozuomba, S. "Development and Comparative Study of Least Mean Square-Based Adaptive Filter Algorithms," *International Multilingual Journal of Science and Technology (IMJST)*, Vol. 3, Issue 12, December 2018, ISSN: 2528-9810
+- B. Widrow and S. D. Stearns, *Adaptive Signal Processing*. Englewood Cliffs, NJ: Prentice Hall, 1985.
+- S. Haykin, *Adaptive Filter Theory*, 4th ed. Upper Saddle River, NJ: Prentice Hall, 2002.
+- A. V. Oppenheim and R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed. Upper Saddle River, NJ: Pearson, 2009.
+- S. Theodoridis and R. Koutroumbas, *Pattern Recognition*, 4th ed. Amsterdam: Academic Press, 2009.
+- S. C. Chapra and R. P. Canale, *Numerical Methods for Engineers*, 6th ed. New York, NY: McGraw-Hill, 2010.
+- N. A. P. Akpan, K. Udofia, and S. Ozuomba, "Development and Comparative Study of Least Mean Square-Based Adaptive Filter Algorithms," *International Multilingual Journal of Science and Technology (IMJST)*, vol. 3, no. 12, pp. 2933-2941, Dec. 2018. [Online]. Available: https://www.imjst.org/wp-content/uploads/2018/12/IMJSTP29120119.pdf.
+- A. Chiheb and H. Khelladi, "Performance Comparison of LMS and RLS Algorithms for Ambient Noise Attenuation," *International Journal of Electrical and Computer Engineering Research*, vol. 4, pp. 14-19, 2024. doi: https://doi.org/10.53375/ijecer.2024.383.
+- A. Manseur and A. Dendouga, "Enhanced Noise Cancellation: A Variable Step Size Normalized Least Mean Square Approach," *Traitement du Signal*, vol. 41, no. 2, pp. 911-918, Apr. 2024. doi: https://doi.org/10.18280/ts.410231.
 
 ---
 
